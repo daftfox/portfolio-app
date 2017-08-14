@@ -1,1 +1,158 @@
+@import "assets/themes/anthracit-orange.theme.css";
+@import "../node_modules/bootstrap/dist/css/bootstrap-grid.min.css";
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+@font-face {
+  font-family: 'junction-bold';
+  src:  url('assets/fonts/junction/junction-bold.eot'); /* IE9 Compat Modes */
+  src:  url('assets/fonts/junction/junction-bold.eot?#iefix')   format('embedded-opentype'),/* IE6-IE8 */
+        url('assets/fonts/junction/junction-bold.woff')         format('woff'),             /* Pretty Modern Browsers */
+        url('assets/fonts/junction/junction-bold.ttf')          format('truetype'),         /* Safari, Android, iOS */
+        url('assets/fonts/junction/junction-bold.svg#webfont')  format('svg');              /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'junction-light';
+  src:  url('assets/fonts/junction/junction-light.eot'); /* IE9 Compat Modes */
+  src:  url('assets/fonts/junction/junction-light.eot?#iefix')  format('embedded-opentype'),/* IE6-IE8 */
+        url('assets/fonts/junction/junction-light.woff')        format('woff'),             /* Pretty Modern Browsers */
+        url('assets/fonts/junction/junction-light.ttf')         format('truetype'),         /* Safari, Android, iOS */
+        url('assets/fonts/junction/junction-light.svg#webfont') format('svg');              /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'junction-regular';
+  src:  url('assets/fonts/junction/junction-regular.eot'); /* IE9 Compat Modes */
+  src:  url('assets/fonts/junction/junction-regular.eot?#iefix')  format('embedded-opentype'),/* IE6-IE8 */
+        url('assets/fonts/junction/junction-regular.woff')        format('woff'),             /* Pretty Modern Browsers */
+        url('assets/fonts/junction/junction-regular.ttf')         format('truetype'),         /* Safari, Android, iOS */
+        url('assets/fonts/junction/junction-regular.svg#webfont') format('svg');              /* Legacy iOS */
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #ffab40;
+  border: 0px none #ffffff;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffc633;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #da9237;
+}
+::-webkit-scrollbar-track {
+  background: #666666;
+  border: 0px none #ffffff;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
 /* You can add global styles to this file, and also import other style files */
+body, html{
+  padding: 0;
+  margin: 0;
+  font-family: 'junction-regular', sans-serif;
+}
+
+#particles-js{
+  background: rgb(34,34,34); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(34,34,34,1) 0%, rgba(34,34,34,1) 53%, rgba(145,113,72,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(34,34,34,1) 0%,rgba(34,34,34,1) 53%,rgba(145,113,72,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(34,34,34,1) 0%,rgba(34,34,34,1) 53%,rgba(145,113,72,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222222', endColorstr='#917148',GradientType=0 ); /* IE6-9 */
+  /*pointer-events:auto;*/
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+a:link,
+a:active{
+  color: #da9237;
+}
+
+a:hover{
+  color: #ffc633;
+}
+
+a:visited{
+  color: #ff8c5a;
+}
+
+.orange{
+  color: #ffab40;
+}
+
+hr.orange {
+  border-color: #ffab40!important;
+}
+
+.gray{
+  color: #bdbdbd;
+}
+
+.jumbo{
+  font-size: 72px;
+}
+
+.sub{
+  font-size: 18px;
+}
+
+.bold{
+  font-family: 'junction-bold', sans-serif;
+}
+
+.light{
+  font-family: 'junction-light', sans-serif;
+}
+
+.center-image{
+  position: relative;
+  height: 150px;
+}
+
+.center-image img{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+@media screen and (max-width: 300px){
+  .jumbo{
+    font-size: 42px;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 400px){
+  .jumbo{
+    font-size: 52px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px){
+  .jumbo{
+    font-size: 52px;
+  }
+}
