@@ -1,18 +1,18 @@
 export class Experience {
-  id: number;
-  name: string;
-  logoUrl: string;
-  projects?: string[];
+  id:           number;
+  name:         string;
+  logoUrl:      string;
+  projects?:    string[];
   description?: string;
-  imageUrls?: string[];
+  imageUrls?:   string[];
 
 
-  constructor (id, name, logoUrl, projects?, description?, imageUrls?) {
-    this.id = id;
-    this.name = name;
-    this.logoUrl = logoUrl;
-    this.projects = projects;
-    this.description = description;
-    this.imageUrls = imageUrls;
+  constructor (input) {
+    this.id           = input.id;
+    this.name         = input.name;
+    this.logoUrl      = input.logoUrl;
+    this.projects     = input.projects;
+    this.description  = input.description;
+    this.imageUrls    = input.imageUrls;
   }
 }

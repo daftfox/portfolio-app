@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Experience } from '../classes/experience.class';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { ModalComponent } from './modal.component';
+import {ExperienceService} from '../services/experience.service';
 
 @Component({
   selector: 'experience-component',
@@ -40,19 +41,18 @@ import { ModalComponent } from './modal.component';
   template:
     `<div class="container mt-5">
       <div class="row justify-content-center">
-
-        <div  *ngFor="let employer of employers"
+        <div  *ngFor="let experience of experiences"
               class="col-3">
           <div class="row employer justify-content-center gray"
-               (click)="openModal()">
+               (click)="openModal(experience)">
             <div class="col-12">
               <div class="center-image text-center">
-                <img src="{{employer.logoUrl}}" />
+                <img src="{{experience.logoUrl}}" />
               </div>
               <div class="projects">
-                <span class="caption">{{employer.name}}</span>
+                <span class="caption">{{experience.name}}</span>
                 <ul class="list-unstyled bold">
-                  <li class="light" *ngFor="let project of employer.projects">{{project}}</li>
+                  <li class="light" *ngFor="let project of experience.projects">{{project}}</li>
                 </ul>
               </div>
             </div>
@@ -64,23 +64,21 @@ import { ModalComponent } from './modal.component';
 })
 
 export class ExperienceComponent {
-  employers: Experience[] = [
-    new Experience(1, 'Ordina', './assets/img/logo-ordina.png', ['KIT', 'Code and Comedy']),
-    new Experience(2, 'Rabobank', './assets/img/logo-rabobank.png', ['Mobiel Bankieren App']),
-    new Experience(3, 'Damco', './assets/img/logo-damco.png', ['Project \'Frida\'']),
-    new Experience(4, 'Travel Light', './assets/img/logo-travel-light.png', ['Website']),
-    new Experience(5, 'Triple', './assets/img/logo-triple.png', ['Achmea Even Tanken', 'Snipp-IT', 'Project \'Doutzen\'']),
-    new Experience(6, 'Adésys', './assets/img/logo-adesys.png', ['Livind']),
-    new Experience(7, 'OIS', './assets/img/logo-ois.png', ['SDS Medical'])
-  ];
+  experiences: Experience[];
 
-  constructor (private modalService: NgbModal) {
-
+  constructor ( private modalService: NgbModal,
+                private experienceService: ExperienceService) {
+    this.experienceService
+      .getExperiences()
+      .subscribe((data: Experience[]) => {
+        this.experiences = data;
+    });
   }
 
-  openModal () {
+  openModal (experience: Experience) {
     const modalRef = this.modalService.open(ModalComponent, {size: 'lg'}).componentInstance;
-    modalRef.title = 'test';
-    modalRef.content = 'Pannekoek met spek';
+    modalRef.title = experience.name;
+    modalRef.content = experience.description;
+    modalRef.logoUrl = experience.logoUrl;
   }
 }

@@ -14,6 +14,7 @@ import { NavigationComponent } from './components/navigation.component';
 import { ModalComponent } from './components/modal.component';
 
 // services
+import { ExperienceService } from './services/experience.service';
 
 // pipes
 import { CapitalizePipe } from './pipes/capitalize.pipe';
@@ -67,7 +68,9 @@ const appRoutes: Routes = [
       { enableTracing: false } // <-- debugging purposes only
     )
   ],
-  providers: [],
+  providers: [
+    ExperienceService
+  ],
   bootstrap: [AppComponent],
   exports: [
     RouterModule

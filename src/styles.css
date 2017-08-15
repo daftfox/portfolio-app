@@ -139,6 +139,11 @@ hr.orange {
   margin: auto;
 }
 
+.modal-content{
+  background-color: #444;
+  color: white;
+}
+
 @media screen and (max-width: 300px){
   .jumbo{
     font-size: 42px;

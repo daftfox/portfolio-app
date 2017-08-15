@@ -1,0 +1,84 @@
+[
+  {
+    "id": 1,
+    "name": "Ordina",
+    "logoUrl": "./assets/img/logo-ordina.png",
+    "projects": [
+      "KIT",
+      "Code and Comedy"
+    ],
+    "description": "Ordina has been a real game-changer for me. Since starting here, I have been able to work on several highly interesting jobs that would otherwise never have crossed my path. The free courses also offer plenty to ponder on.",
+    "imageUrls": [
+
+    ]
+  },{
+    "id": 2,
+    "name": "Rabobank",
+    "logoUrl": "./assets/img/logo-rabobank.png",
+    "projects": [
+      "Mobiel bankieren app"
+    ],
+    "description": "Being the second largest bank in the Netherlands claiming about a third of the market, Rabobank is filled to the brim with hundreds of highly skilled nerds. With a mobile banking app serving over six million, this is a place where precision and efficiency are required. We work in a dev-ops environment where each team functions as an autonomous unit, responsible for the complete lifecycle of their own features.",
+    "imageUrls": [
+
+    ]
+  },{
+    "id": 3,
+    "name": "Damco",
+    "logoUrl": "./assets/img/logo-damco.png",
+    "projects": [
+      "Frida"
+    ],
+    "description": "Damco, a dutch logistics company with offices and warehouses around the world, requested a team of developers on extremely short notice. This team was to replace the warehouse management system of their warehouse in Göteborg, Sweden, within 3 days, from scratch. Needless to say this was no small feat, however the job was completed satisfactory.",
+    "imageUrls": [
+
+    ]
+  },{
+    "id": 4,
+    "name": "Travel Light",
+    "logoUrl": "./assets/img/logo-travel-light.png",
+    "projects": [
+      "Booking form"
+    ],
+    "description": "I have close ties to this bustling start-up company. Currently lead by my girlfriend, they aim to ship your luggage to and from your holiday destination. Start-ups aren't known for their limitless financial wealth, thus can have a hard time finding affordable professionals for their automation needs. I took it upon myself to help out both my partner and her boss by replacing their dysfunctional booking module and offering advice and maintenance.",
+    "imageUrls": [
+
+    ]
+  },{
+    "id": 5,
+    "name": "Triple",
+    "logoUrl": "./assets/img/logo-triple.png",
+    "projects": [
+      "Achmea Even Tanken",
+      "Snipp-IT",
+      "Project \"Doutzen\"",
+      "Voice of Holland"
+    ],
+    "description": "Triple was my first 'real' job as a developer when I got plucked from class the third year of college. They allowed me to try out many different facets of development; web, Android, iOS, and attempted to mold me into a professional developer, although that would take a little more time yet.",
+    "imageUrls": [
+
+    ]
+  },{
+    "id": 6,
+    "name": "Adésys",
+    "logoUrl": "./assets/img/logo-adesys.png",
+    "projects": [
+      "Livind"
+    ],
+    "description": "My time at Adésys was when I first came into contact with modern javascript frameworks. Here I worked together with specialists from very different disciplines as well as becoming more proficient with microelectronics since Adésys produces and designs its own hardware.",
+    "imageUrls": [
+
+    ]
+  },{
+    "id": 7,
+    "name": "OIS",
+    "logoUrl": "./assets/img/logo-ois.png",
+    "projects": [
+      "SDS Medical"
+    ],
+    "description": "OIS delivers digital environments for storing and collecting data from several sources, but most noticeably, webforms and with hospitals and governments as customers, standards are high. I spent a lot of time with my nose inside Oracle databases here.",
+    "imageUrls": [
+
+    ]
+  }
+]

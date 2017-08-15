@@ -46,7 +46,7 @@ import 'rxjs/add/operator/mergeMap';
       
     hr{
       margin-top: 0!important;
-      box-shadow: black 0 -1px 5px;
+      box-shadow: black 0 -2px 5px;
     }
     `
   ],
