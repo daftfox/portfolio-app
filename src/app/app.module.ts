@@ -7,7 +7,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 // components
 import { YearsSinceDateComponent } from './components/years-since-date.component';
-import { HomeComponent } from './components/home.component';
+import { AboutComponent } from './components/about.component';
 import { ExperienceComponent } from './components/experience.component';
 import { ContactComponent } from 'app/components/contact.component';
 import { NavigationComponent } from './components/navigation.component';
@@ -15,32 +15,31 @@ import { ModalComponent } from './components/modal.component';
 
 // services
 import { ExperienceService } from './services/experience.service';
+import { SkillService } from './services/skill.service';
 
 // pipes
 import { CapitalizePipe } from './pipes/capitalize.pipe';
 
 // should be loaded AFTER BrowserAnimationsModule
-/*import { MdButtonModule, MdCardModule, MdCheckboxModule } from '@angular/material';*/
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
 import { AppComponent } from './app.component';
 
 const appRoutes: Routes = [
   {
-    path: 'home',
-    component: HomeComponent
+    path: 'about',
+    component: AboutComponent
   },
   {
     path: 'experience',
     component: ExperienceComponent
   },
-  {
+  /*{
     path: 'contact',
     component: ContactComponent
-  },
+  },*/
   {
     path: '',
-    redirectTo: '/home',
+    redirectTo: '/about',
     pathMatch: 'full'
   },
 ];
@@ -49,7 +48,7 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
+    AboutComponent,
     ExperienceComponent,
     ContactComponent,
     NavigationComponent,
@@ -69,7 +68,8 @@ const appRoutes: Routes = [
     )
   ],
   providers: [
-    ExperienceService
+    ExperienceService,
+    SkillService
   ],
   bootstrap: [AppComponent],
   exports: [

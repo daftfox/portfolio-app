@@ -4,7 +4,7 @@ import * as moment from 'moment';
 
 @Component({
   selector: 'years-since-date',
-  template: `<ng-template>{{output}}</ng-template>`
+  template: `<span>{{output}}</span>`
 })
 
 export class YearsSinceDateComponent implements OnInit {

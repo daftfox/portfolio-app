@@ -1,6 +1,7 @@
-@import "assets/themes/anthracit-orange.theme.css";
+@import "assets/themes/anthracit-orange.theme";
 @import "../node_modules/bootstrap/dist/css/bootstrap-grid.min.css";
 @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "../node_modules/font-awesome/css/font-awesome.min.css";
 
 @font-face {
   font-family: 'junction-bold';
@@ -29,6 +30,10 @@
         url('assets/fonts/junction/junction-regular.svg#webfont') format('svg');              /* Legacy iOS */
 }
 
+$orange:      #ffab40;
+$gray:        #bdbdbd;
+$anthracite:  #222222;
+
 ::-webkit-scrollbar {
   width: 2px;
   height: 2px;
@@ -38,27 +43,31 @@
   height: 0px;
 }
 ::-webkit-scrollbar-thumb {
-  background: #ffab40;
+  background: $orange;
   border: 0px none #ffffff;
   border-radius: 0px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #ffc633;
-}
-::-webkit-scrollbar-thumb:active {
-  background: #da9237;
+
+  &:hover {
+    background: lighten($orange, 10%);
+  }
+
+  &:active {
+    background: darken($orange, 10%);
+  }
 }
 ::-webkit-scrollbar-track {
   background: #666666;
   border: 0px none #ffffff;
   border-radius: 0px;
+
+  &:hover {
+    background: #666666;
+  }
+  &:active {
+    background: #333333;
+  }
 }
-::-webkit-scrollbar-track:hover {
-  background: #666666;
-}
-::-webkit-scrollbar-track:active {
-  background: #333333;
-}
+
 ::-webkit-scrollbar-corner {
   background: transparent;
 }
@@ -68,15 +77,15 @@ body, html{
   padding: 0;
   margin: 0;
   font-family: 'junction-regular', sans-serif;
+  font-size: 18px;
 }
 
 #particles-js{
-  background: rgb(34,34,34); /* Old browsers */
-  background: -moz-linear-gradient(top, rgba(34,34,34,1) 0%, rgba(34,34,34,1) 53%, rgba(145,113,72,1) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, rgba(34,34,34,1) 0%,rgba(34,34,34,1) 53%,rgba(145,113,72,1) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, rgba(34,34,34,1) 0%,rgba(34,34,34,1) 53%,rgba(145,113,72,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222222', endColorstr='#917148',GradientType=0 ); /* IE6-9 */
-  /*pointer-events:auto;*/
+  background: $anthracite; /* Old browsers */
+  background: -moz-linear-gradient(top, $anthracite 0%, $anthracite 53%, #6C5136 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, $anthracite 0%, $anthracite 53%, #6C5136 100% 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, $anthracite 0%, $anthracite 53%, #6C5136 100% 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$anthracit', endColorstr='#6C5136',GradientType=0 ); /* IE6-9 */
   position: fixed;
   top: 0;
   bottom: 0;
@@ -84,37 +93,48 @@ body, html{
   right: 0;
 }
 
-a:link,
-a:active{
-  color: #da9237;
-}
+a{
+  &.gray{
+    &:link,
+    &:active{
+      color: $gray;
+    }
+    &:hover{
+      color: white;
+    }
+    &:visited{
+      color: $gray;
+    }
+  }
 
-a:hover{
-  color: #ffc633;
-}
+  &:active,
+  &:link{
+    color: darken($orange, 10%);
+  }
 
-a:visited{
-  color: #ff8c5a;
+  &:hover{
+    color: darken($orange, 10%);
+  }
+
+  &:visited{
+    color: $orange + #660000;
+  }
 }
 
 .orange{
-  color: #ffab40;
-}
-
-hr.orange {
-  border-color: #ffab40!important;
+  color: $orange;
 }
 
 .gray{
-  color: #bdbdbd;
+  color: $gray;
+}
+
+hr.orange {
+  border-color: $orange!important;
 }
 
 .jumbo{
   font-size: 72px;
-}
-
-.sub{
-  font-size: 18px;
 }
 
 .bold{
@@ -128,19 +148,23 @@ hr.orange {
 .center-image{
   position: relative;
   height: 150px;
-}
 
-.center-image img{
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
+  img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
 }
 
 .modal-content{
-  background-color: #444;
+  background: rgb(35,35,35); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(35,35,35,1) 0%, rgba(68,68,68,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(35,35,35,1) 0%,rgba(68,68,68,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(35,35,35,1) 0%,rgba(68,68,68,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#232323', endColorstr='#444444',GradientType=0 ); /* IE6-9 */
   color: white;
 }
 

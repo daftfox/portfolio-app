@@ -4,10 +4,21 @@
     "name": "Ordina",
     "logoUrl": "./assets/img/logo-ordina.png",
     "projects": [
-      "KIT",
-      "Code and Comedy"
+      {
+        "id": 1,
+        "name": "KIT",
+        "description": "KIT stands for 'Kennis Inventarisatie Tool' (Knowledge Inventory Tool).\r\nThis project started long before I joined Ordina. It's goal is to create and offer an inventory of the skills and knowledge the company has in-house at any given moment.\r\nWhere I was initially only required to supply a new front-end, I soon ran out of work and joined the back-end team to help and design a datamodel and API.\r\nThe front-end was written in AngularJS along with the standard Bootstrap styling.",
+        "imageUrls": [],
+        "siteUrl": null
+      },{
+        "id": 2,
+        "name": "Code and Comedy",
+        "description": "Code and Comedy is a yearly recurring event featuring several well known international and local speakers, combined with a dash of comedy.\r\nI was given full ownership and responsibility for designing and creating a registration page. I was inspired by the 'help' section of the JetBrains website, which just so happens to look like a terminal shell. I designed the entire site around the idea that users would register using a simulated terminal shell. The front-end was written entirely in AngularJS, with a little help from Bootstrap, strapped into a continuous integration environment and hooked up to the corporate CMS system.\r\nThe event turned out to be a great success, where the ASCII-art design was printed on almost every possible surface.",
+        "imageUrls": [],
+        "siteUrl": "http://www.codeandcomedy.nl"
+      }
     ],
-    "description": "Ordina has been a real game-changer for me. Since starting here, I have been able to work on several highly interesting jobs that would otherwise never have crossed my path. The free courses also offer plenty to ponder on.",
+    "description": "Ordina has been a real game-changer for me. \r\nSince starting here, I have been able to work on several highly interesting jobs that would otherwise never have crossed my path.\r\nThe free courses also offer plenty to ponder on.",
     "imageUrls": [
 
     ]
@@ -16,9 +27,15 @@
     "name": "Rabobank",
     "logoUrl": "./assets/img/logo-rabobank.png",
     "projects": [
-      "Mobiel bankieren app"
+      {
+        "id": 3,
+        "name": "Mobiel Bankieren App",
+        "description": "Rabobank's mobile banking app was once considered an unwieldy and at times even unstable piece of native software. We have come a long way since then and now employ a native wrapper around a collection of tiny, but powerful AngularJS applications.",
+        "imageUrls": [],
+        "siteUrl": "https://www.rabobank.nl/particulieren/apps/rabo-bankieren-app/"
+      }
     ],
-    "description": "Being the second largest bank in the Netherlands claiming about a third of the market, Rabobank is filled to the brim with hundreds of highly skilled nerds. With a mobile banking app serving over six million, this is a place where precision and efficiency are required. We work in a dev-ops environment where each team functions as an autonomous unit, responsible for the complete lifecycle of their own features.",
+    "description": "Being the second largest bank in the Netherlands claiming about a third of the market, Rabobank is filled to the brim with hundreds of highly skilled nerds. With a mobile banking app serving over six million, this is a place where precision and efficiency are required.\r\nWe work in a dev-ops environment where each team functions as an autonomous unit, responsible for the complete lifecycle of their own features.",
     "imageUrls": [
 
     ]
@@ -27,9 +44,14 @@
     "name": "Damco",
     "logoUrl": "./assets/img/logo-damco.png",
     "projects": [
-      "Frida"
+      {
+        "id": 4,
+        "name": "Frida",
+        "description": "Damco was hit hard during the wave of Petya infections. After having lost their entire infrastructure and all data, we, a team of five random developers, scrambled together to realize a replacement warehouse management system within three days.\r\nFrida is written in PHP, assisted by Bootstrap with a MySQL database.",
+        "imageUrls": []
+      }
     ],
-    "description": "Damco, a dutch logistics company with offices and warehouses around the world, requested a team of developers on extremely short notice. This team was to replace the warehouse management system of their warehouse in Göteborg, Sweden, within 3 days, from scratch. Needless to say this was no small feat, however the job was completed satisfactory.",
+    "description": "Damco, a dutch logistics company with offices and warehouses around the world, requested a team of developers on extremely short notice. This team was to replace the warehouse management system of their warehouse in Göteborg, Sweden, within three days, from scratch.\r\nNeedless to say this was no small feat, however the job was completed satisfactory.",
     "imageUrls": [
 
     ]
@@ -38,9 +60,15 @@
     "name": "Travel Light",
     "logoUrl": "./assets/img/logo-travel-light.png",
     "projects": [
-      "Booking form"
+      {
+        "id": 5,
+        "name": "Booking Form",
+        "description": "Travel Light is a small but fast rising start-up, currently run by my girlfriend. Being a small start-up, they had their initial website built by someone who was kind enough to do it for a very low price. Sadly, the low price became evident in the quality of the final product. Because I also have a regular full-time job, I decided to only replace the booking module in order to make my partner's and my own life easier.\r\nThe scope of this project was limited to the replacement of the booking module, since the rest of the site is mostly static content and I didn't want to intrude too much in others' territory. This was done in close collaboration with a back-ender from one of their suppliers.\r\nThe module has been written entirely in Angular.\r\nLater requests from Travel Light include patching security leaks that were left by a former (junior) developer.",
+        "imageUrls": [],
+        "siteUrl": "https://www.travel-light.nl/booking.php"
+      }
     ],
-    "description": "I have close ties to this bustling start-up company. Currently lead by my girlfriend, they aim to ship your luggage to and from your holiday destination. Start-ups aren't known for their limitless financial wealth, thus can have a hard time finding affordable professionals for their automation needs. I took it upon myself to help out both my partner and her boss by replacing their dysfunctional booking module and offering advice and maintenance.",
+    "description": "I have close ties to this bustling start-up company. Currently lead by my girlfriend, they aim to ship your luggage to and from your holiday destination.\r\nStart-ups aren't known for their limitless financial wealth, thus can have a hard time finding affordable professionals for their automation needs. I took it upon myself to help out both my partner and her boss by replacing their dysfunctional booking module and offering advice and maintenance.",
     "imageUrls": [
 
     ]
@@ -49,12 +77,33 @@
     "name": "Triple",
     "logoUrl": "./assets/img/logo-triple.png",
     "projects": [
-      "Achmea Even Tanken",
-      "Snipp-IT",
-      "Project \"Doutzen\"",
-      "Voice of Holland"
+      {
+        "id": 6,
+        "name": "Achmea Even Tanken",
+        "description": "This was my first (and so far last) iOS application. Achmea wanted to lower the number of customers who ended up filling their vehicle with the wrong type of fuel. The app featured a rolodex interface for users to select the type of fuel for their vehicle after which it's name was translated to its official name(s) in more than ten languages.",
+        "imageUrls": [],
+        "siteUrl": null
+      },{
+        "id": 7,
+        "name": "Snipp-IT",
+        "description": "Snipp-IT was an internal code snippet application database that was more of a good exercise for a complete junior like I was than an actual production-ready application.\r\nWritten entirely in PHP, making use of a proprietary framework and bootstrap.",
+        "imageUrls": [],
+        "siteUrl": null
+      },{
+        "id": 8,
+        "name": "Project 'Doutzen'",
+        "description": "Project 'Doutzen' was the pseudonym for a system that would collect, aggregate and display crashes of apps in our portfolio.\r\nWritten in PHP, making use of a proprietary framework in combination with bootstrap.",
+        "imageUrls": [],
+        "siteUrl": null
+      },{
+        "id": 9,
+        "name": "Voice of Holland",
+        "description": "Voice of Holland: singing Sunday featured the actual app users in a community fed karaoke app. Users could record and grade themselves singing on one of the many included songs.\r\nMy role was writing the camera module for the Android app and moderation of the submitted recordings.",
+        "imageUrls": [],
+        "siteUrl": null
+      }
     ],
-    "description": "Triple was my first 'real' job as a developer when I got plucked from class the third year of college. They allowed me to try out many different facets of development; web, Android, iOS, and attempted to mold me into a professional developer, although that would take a little more time yet.",
+    "description": "Triple was my first 'real' job as a developer when I got plucked from class the third year of college.\r\nThey allowed me to try out many different facets of development; web, Android, iOS, and attempted to mold me into a professional developer, although that would take a little more time yet.",
     "imageUrls": [
 
     ]
@@ -63,7 +112,13 @@
     "name": "Adésys",
     "logoUrl": "./assets/img/logo-adesys.png",
     "projects": [
-      "Livind"
+      {
+        "id": 10,
+        "name": "Livind",
+        "description": "Livind was a set of healthcare domotica connected to a webservice. This allows users to monitor the loved ones who need that extra support through an anonymous stream of data.\r\nThe service was comprised of an AngularJS front-end and NodeJS/Express back-end. I did not have a single role in this project, but mostly worked on front-end stories. However the experience gained with Express convinced me to start building my own APIs.",
+        "imageUrls": [],
+        "siteUrl": "http://www.livind.nl"
+      }
     ],
     "description": "My time at Adésys was when I first came into contact with modern javascript frameworks. Here I worked together with specialists from very different disciplines as well as becoming more proficient with microelectronics since Adésys produces and designs its own hardware.",
     "imageUrls": [
@@ -74,7 +129,13 @@
     "name": "OIS",
     "logoUrl": "./assets/img/logo-ois.png",
     "projects": [
-      "SDS Medical"
+      {
+        "id": 11,
+        "name": "SDS Medical",
+        "description": "SDS Medical is a system providing ISO standardised forms for data collection, mostly used by hospitals. I would create the forms, styling and write packages for the Oracle database.",
+        "imageUrls": [],
+        "siteUrl": "http://www.sds-medical.com"
+      }
     ],
     "description": "OIS delivers digital environments for storing and collecting data from several sources, but most noticeably, webforms and with hospitals and governments as customers, standards are high. I spent a lot of time with my nose inside Oracle databases here.",
     "imageUrls": [

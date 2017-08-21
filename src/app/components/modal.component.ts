@@ -1,5 +1,6 @@
 import {Component, Input} from '@angular/core';
 import {NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
+import {Project} from '../classes/project.class';
 
 @Component({
   selector: 'modal',
@@ -15,10 +16,17 @@ import {NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
         <div class="row justify-content-center">
           <img class="logo mb-4 mt-4" src="{{logoUrl}}" />
         </div>
-        <p>{{content}}</p>
+        <p class="description">{{content}}</p>
         <div class="row justify-content-center">
           <div *ngFor="let imageUrl of imageUrls" class="col">
             <img src="{{imageUrl}}" />
+          </div>
+        </div>
+        <div class="row justify-content-start">
+          <div *ngFor="let project of projects"
+               class="col project">
+            <h3 class="orange">{{project.name}}</h3>
+            <p class="description">{{project.description}}</p>
           </div>
         </div>
       </div>
@@ -37,7 +45,11 @@ import {NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
       color: #ffab40;
     }
     .logo{
-      max-height: 100px;
+      max-height: 150px;
+    }
+    .description{
+      white-space: pre-wrap;
+      font-size: 16px;
     }
     `
   ]
@@ -48,6 +60,7 @@ export class ModalComponent {
   @Input() title: string;
   @Input() content: string;
   @Input() imageUrls: string[];
+  @Input() projects: Project[];
 
   constructor(public activeModal: NgbActiveModal) {}
 }

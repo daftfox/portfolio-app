@@ -1,8 +1,10 @@
+import {Project} from './project.class';
+
 export class Experience {
   id:           number;
   name:         string;
   logoUrl:      string;
-  projects?:    string[];
+  projects?:    Project[];
   description?: string;
   imageUrls?:   string[];
 
@@ -11,8 +13,11 @@ export class Experience {
     this.id           = input.id;
     this.name         = input.name;
     this.logoUrl      = input.logoUrl;
-    this.projects     = input.projects;
     this.description  = input.description;
     this.imageUrls    = input.imageUrls;
+    this.projects     = [];
+    for (const project of input.projects) {
+      this.projects.push(new Project(project));
+    }
   }
 }

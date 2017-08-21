@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "name": "HTML",
+    "logoUrl": "./assets/img/logo-html.png",
+    "type": "fe"
+  },{
+    "id": 2,
+    "name": "CSS",
+    "logoUrl": "./assets/img/logo-css.png",
+    "type": "fe"
+  },{
+    "id": 3,
+    "name": "JavaScript",
+    "logoUrl": "./assets/img/logo-javascript.png",
+    "type": "fe"
+  },{
+    "id": 4,
+    "name": "Angular(js)",
+    "logoUrl": "./assets/img/logo-angular.png",
+    "type": "fefw"
+  },{
+    "id": 5,
+    "name": "SASS",
+    "logoUrl": "./assets/img/logo-sass.png",
+    "type": "fefw"
+  },{
+    "id": 6,
+    "name": "jQuery",
+    "logoUrl": "./assets/img/logo-jquery.png",
+    "type": "fefw"
+  },{
+    "id": 7,
+    "name": "Java",
+    "logoUrl": "./assets/img/logo-java.png",
+    "type": "be"
+  },{
+    "id": 8,
+    "name": "PHP",
+    "logoUrl": "./assets/img/logo-php.png",
+    "type": "be"
+  },{
+    "id": 9,
+    "name": "NodeJS",
+    "logoUrl": "./assets/img/logo-nodejs.png",
+    "type": "be"
+  },{
+    "id": 10,
+    "name": "MySQL",
+    "logoUrl": "./assets/img/logo-mysql.png",
+    "type": "db"
+  },{
+    "id": 11,
+    "name": "Oracle",
+    "logoUrl": "./assets/img/logo-oracle.png",
+    "type": "db"
+  },{
+    "id": 12,
+    "name": "ExpressJS",
+    "logoUrl": "./assets/img/logo-express.png",
+    "type": "befw"
+  },{
+    "id": 13,
+    "name": "TypeScript",
+    "logoUrl": "./assets/img/logo-typescript.png",
+    "type": "fe"
+  }
+]

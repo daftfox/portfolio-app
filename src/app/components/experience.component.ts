@@ -52,7 +52,7 @@ import {ExperienceService} from '../services/experience.service';
               <div class="projects">
                 <span class="caption">{{experience.name}}</span>
                 <ul class="list-unstyled bold">
-                  <li class="light" *ngFor="let project of experience.projects">{{project}}</li>
+                  <li class="light" *ngFor="let project of experience.projects">{{project.name}}</li>
                 </ul>
               </div>
             </div>
@@ -80,5 +80,6 @@ export class ExperienceComponent {
     modalRef.title = experience.name;
     modalRef.content = experience.description;
     modalRef.logoUrl = experience.logoUrl;
+    modalRef.projects = experience.projects;
   }
 }

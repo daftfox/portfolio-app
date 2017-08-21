@@ -98,7 +98,7 @@ export class AppComponent implements OnInit {
           }
         },
         "bubble": {
-          "distance": 133.79716350013388,
+          "distance": 60,
           "size": 4.054459500004057,
           "duration": 2,
           "opacity": 8,

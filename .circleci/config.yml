@@ -1,0 +1,34 @@
+version: 2
+jobs:
+  build:
+    steps:
+      - checkout
+
+      # Download and cache dependencies
+      - restore_cache:
+          keys:
+          - v1-dependencies-{{ checksum "package.json" }}
+          # fallback to using the latest cache if no exact match is found
+          - v1-dependencies-
+
+      - run:
+          command: npm install
+          name: "Installing Dependencies"
+
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
+
+      - run:
+          command: chmod u+x ./deployments/build_prod.sh
+          name: "Updating build script permissions"
+      - run:
+          command: npm run build-prod
+          name: "Running build script"
+
+      - deploy: production:
+          branch: master
+          commands:
+            - chmod u+x ./deployments/deploy_dev.sh
+            - ./deployments/deploy_dev.sh

@@ -43,6 +43,9 @@ import 'rxjs/add/operator/mergeMap';
     .w100p{
       min-width: 100px;
     }
+    .w50p{
+      min-width: 50px;
+    }
       
     hr{
       margin-top: 0!important;
@@ -63,6 +66,15 @@ import 'rxjs/add/operator/mergeMap';
                 routerLinkActive="active"
                 class="list-inline-item">
               <div class="w100p center-text">{{r.path | capitalize}}</div>
+            </li>
+            <li class="list-inline-item">
+              <div class="w50p center-text">
+                <a class="gray"
+                   target="_blank"
+                   href="https://www.linkedin.com/in/tim-claassens/">
+                  <span class="fa fa-linkedin"></span>
+                </a>
+              </div>
             </li>
           </ul>
         </div>

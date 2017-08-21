@@ -5,7 +5,9 @@ import {Component} from '@angular/core';
   styles: [
     ``
   ],
-  template: ``
+  template: `
+    
+  `
 })
 
 export class ContactComponent {
