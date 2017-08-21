@@ -15,7 +15,7 @@ jobs:
 
       - run:
           command: npm install
-          name: "Installing Dependencies"
+          name: Installing Dependencies
 
       - save_cache:
           paths:
@@ -23,11 +23,10 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       - run:
-          command: chmod u+x ./deployments/build_prod.sh
-          name: "Updating build script permissions"
-      - run:
-          command: npm run build-prod
-          name: "Running build script"
+          name: Running build script
+          command: |
+            chmod u+x ./deployments/build_prod.sh
+            npm run build-prod
 
       - deploy: production:
           branch: master
