@@ -27,7 +27,8 @@ jobs:
       - run:
           name: Running build script for develop branch
           command: |
-            if [ "${CIRCLE_BRANCH}" == "develop" ];
+            if [ "${CIRCLE_BRANCH}" == "develop" ]
+            then
               chmod u+x ./deployments/build_test.sh
               npm run build-test
               sudo apt install rsync
@@ -37,7 +38,8 @@ jobs:
       - run:
           name: Running build script for master branch
           command: |
-            if [ "${CIRCLE_BRANCH}" == "master" ];
+            if [ "${CIRCLE_BRANCH}" == "master" ]
+            then
               chmod u+x ./deployments/build_prod.sh
               npm run build-prod
               sudo apt install rsync
@@ -51,7 +53,8 @@ jobs:
       - deploy:
           name: Deploy develop branch
           command: |
-            if [ "${CIRCLE_BRANCH}" == "develop" ];
+            if [ "${CIRCLE_BRANCH}" == "develop" ]
+            then
               chmod u+x ./deployments/deploy_test.sh
               ./deployments/deploy_test.sh
             fi
@@ -59,7 +62,8 @@ jobs:
       - deploy:
           name: Deploy master branch
           command: |
-            if [ "${CIRCLE_BRANCH}" == "master" ];
+            if [ "${CIRCLE_BRANCH}" == "master" ]
+            then
               chmod u+x ./deployments/deploy_prod.sh
               ./deployments/deploy_prod.sh
             fi
