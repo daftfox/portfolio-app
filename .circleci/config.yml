@@ -30,7 +30,7 @@ jobs:
             chmod u+x ./deployments/build_prod.sh
             npm run build-prod
             sudo apt install rsync
-            ssh-keyscan %DEPLOY_HOST >> ~/.ssh/config
+            ssh-keyscan $DEPLOY_HOST >> ~/.ssh/config
 
       - add_ssh_keys:
             fingerprints:
