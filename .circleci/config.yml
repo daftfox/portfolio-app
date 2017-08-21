@@ -25,19 +25,41 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       - run:
-          name: Running build script
+          name: Running build script for develop branch
           command: |
-            chmod u+x ./deployments/build_prod.sh
-            npm run build-prod
-            sudo apt install rsync
-            ssh-keyscan -H $DEPLOY_HOST >> ~/.ssh/known_hosts
+            if [ "${CIRCLE_BRANCH}" == "develop" ];
+              chmod u+x ./deployments/build_test.sh
+              npm run build-test
+              sudo apt install rsync
+              ssh-keyscan -H $DEPLOY_HOST >> ~/.ssh/known_hosts
+            fi
+
+      - run:
+          name: Running build script for master branch
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "master" ];
+              chmod u+x ./deployments/build_prod.sh
+              npm run build-prod
+              sudo apt install rsync
+              ssh-keyscan -H $DEPLOY_HOST >> ~/.ssh/known_hosts
+            fi
 
       #- add_ssh_keys:
       #      fingerprints:
       #        - 0f:aa:30:da:01:a2:de:9d:1e:5c:96:19:b5:a9:5f:c9
 
       - deploy:
-          branch: master
+          name: Deploy develop branch
           command: |
-            chmod u+x ./deployments/deploy_prod.sh
-            ./deployments/deploy_prod.sh
+            if [ "${CIRCLE_BRANCH}" == "develop" ];
+              chmod u+x ./deployments/deploy_test.sh
+              ./deployments/deploy_test.sh
+            fi
+
+      - deploy:
+          name: Deploy master branch
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "master" ];
+              chmod u+x ./deployments/deploy_prod.sh
+              ./deployments/deploy_prod.sh
+            fi

@@ -9,7 +9,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build-prod": "./deployments/build_prod.sh"
+    "build-prod": "./deployments/build_prod.sh",
+    "build-test": "./deployments/build_test.sh"
   },
   "private": true,
   "dependencies": {
