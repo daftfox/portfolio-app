@@ -27,6 +27,7 @@ jobs:
           command: |
             chmod u+x ./deployments/build_prod.sh
             npm run build-prod
+            sudo apt install rsync
 
       - deploy:
           branch: master
