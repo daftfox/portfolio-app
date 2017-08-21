@@ -8,21 +8,20 @@ import 'rxjs/add/operator/mergeMap';
 @Component({
   selector: 'navigation',
   styles: [
-    `nav ul.list-inline li.list-inline-item{
+    `nav .row div{
       color: #bdbdbd;
       transition-duration: 0.5s;
       font-family: 'junction-light', sans-serif;
       font-size: 24px;
       cursor: pointer;
-      margin: 0 25px;
       pointer-events: all;
     }
 
-    nav ul.list-inline li.list-inline-item.active{
+    nav .row div.active{
       font-family: 'junction-bold', sans-serif;
     }
 
-    nav ul.list-inline li.list-inline-item:hover{
+    nav .row div.hover:hover{
       color: #ffab40;
     }
       
@@ -32,7 +31,7 @@ import 'rxjs/add/operator/mergeMap';
       left: 0;
       right: 0;
       margin: auto;
-      height: 20vh;
+      height: 23vh;
       pointer-events: none;
     }
     
@@ -51,32 +50,40 @@ import 'rxjs/add/operator/mergeMap';
       margin-top: 0!important;
       box-shadow: black 0 -2px 5px;
     }
+    
+    .social{
+      margin: 10px 2px;
+    }
+    
+    /*@media screen and (max-width: 576px){
+      .menu-label{
+        font-size: 18px!important;
+      }
+    }*/
     `
   ],
   template:
     `<nav class="container">
       <hr class="orange" />
       <div class="row justify-content-center no-gutters">
-        <div class="col-md-auto no-gutters">
-          <ul *ngIf="routes"
-              class="list-inline gray">
-            <li *ngFor="let r of routes"
-                [ngClass]="{'active': active}"
-                routerLink="{{r.path}}"
-                routerLinkActive="active"
-                class="list-inline-item">
-              <div class="w100p center-text">{{r.path | capitalize}}</div>
-            </li>
-            <li class="list-inline-item">
-              <div class="w50p center-text">
-                <a class="gray"
-                   target="_blank"
-                   href="https://www.linkedin.com/in/tim-claassens/">
-                  <span class="fa fa-linkedin"></span>
-                </a>
-              </div>
-            </li>
-          </ul>
+        <div *ngFor="let r of routes"
+            [ngClass]="{'active': active}"
+            routerLink="{{r.path}}"
+            routerLinkActive="active"
+            class="col col-4 gray center-text hover">
+          {{r.path | capitalize}}
+        </div>
+        <div class="col col-4 center-text gray">
+          <a target="_blank"
+             class="social"
+             href="https://www.linkedin.com/in/tim-claassens/">
+            <span class="fa fa-linkedin"></span>
+          </a>
+          <a target="_blank"
+             class="social"
+             href="https://www.linkedin.com/in/tim-claassens/">
+            <span class="fa fa-instagram"></span>
+          </a>
         </div>
       </div>
     </nav>
@@ -85,9 +92,9 @@ import 'rxjs/add/operator/mergeMap';
 
 export class NavigationComponent implements OnInit {
   routes: Route[] = [];
-  route: string;
+  route:  string;
 
-  constructor ( private router: Router,
+  constructor ( private router:   Router,
                 private location: Location ) {
     router.events
       .filter(event => event instanceof NavigationEnd )
@@ -106,7 +113,8 @@ export class NavigationComponent implements OnInit {
 
   getRoutes(config: Route[]) {
     for (let i = 0; i < config.length; i++) {
-      if (config[i].path && config[i].path !== '**') {
+      if (config[i].path &&
+          config[i].path !== '**') {
         this.routes.push(config[i]);
       }
     }

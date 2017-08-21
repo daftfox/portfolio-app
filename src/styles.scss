@@ -93,7 +93,28 @@ body, html{
   right: 0;
 }
 
+.gray a{
+  &:active,
+  &:link{
+    color: $gray;
+  }
+
+  &:hover{
+    color: $orange;
+  }
+
+  &:visited{
+    color: $gray;
+    &:hover{
+      color: $orange;
+    }
+  }
+}
+
 a{
+  text-decoration: none!important;
+  transition-duration: 0.5s;
+
   &.gray{
     &:link,
     &:active{
@@ -166,6 +187,16 @@ hr.orange {
   background: linear-gradient(to bottom, rgba(35,35,35,1) 0%,rgba(68,68,68,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#232323', endColorstr='#444444',GradientType=0 ); /* IE6-9 */
   color: white;
+}
+
+.main{
+  margin-top: 20vh;
+}
+
+@media screen and (max-width: 500px){
+  .main{
+    margin-top: 10vh;
+  }
 }
 
 @media screen and (max-width: 300px){

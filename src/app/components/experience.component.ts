@@ -36,13 +36,23 @@ import {ExperienceService} from '../services/experience.service';
 
     .employer .caption{
       font-size: 20px;
-    }`
+    }
+    @media screen and (max-width: 500px) {
+      .employer .caption{
+        font-size: 16px;
+      }
+      
+      .employer li{
+        font-size: 14px;
+      }
+    }
+    `
   ],
   template:
-    `<div class="container mt-5">
-      <div class="row justify-content-center">
+    `<div class="container main">
+      <div class="row justify-content-start">
         <div  *ngFor="let experience of experiences"
-              class="col-3">
+              class="col col-6 col-lg-3">
           <div class="row employer justify-content-center gray"
                (click)="openModal(experience)">
             <div class="col-12">
