@@ -32,5 +32,5 @@ jobs:
       - deploy:
           branch: master
           command: |
-            chmod u+x ./deployments/deploy_dev.sh
-            ./deployments/deploy_dev.sh
+            chmod u+x ./deployments/deploy_prod.sh
+            ./deployments/deploy_prod.sh
