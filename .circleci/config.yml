@@ -28,8 +28,8 @@ jobs:
             chmod u+x ./deployments/build_prod.sh
             npm run build-prod
 
-      - deploy: production:
+      - deploy:
           branch: master
-          commands:
-            - chmod u+x ./deployments/deploy_dev.sh
-            - ./deployments/deploy_dev.sh
+          command: |
+            chmod u+x ./deployments/deploy_dev.sh
+            ./deployments/deploy_dev.sh
