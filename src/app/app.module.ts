@@ -38,10 +38,15 @@ const appRoutes: Routes = [
     component: ContactComponent
   },*/
   {
-    path: '',
+    path: '**',
     redirectTo: '/about',
     pathMatch: 'full'
   },
+  {
+    path: '',
+    redirectTo: '/about',
+    pathMatch: 'full'
+  }
 ];
 
 

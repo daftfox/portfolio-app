@@ -38,7 +38,7 @@ import { SkillService } from '../services/skill.service';
           <h3 class="orange">What you should know about me</h3>
           <div class="row justify-content-center no-gutters">
             <div class="col col-6">
-              <ul class="list-unstyled sub gray">
+              <ul class="list-unstyled gray padding-right">
                 <li class="mt-3">
                   <span class="fa fa-coffee orange"></span> I <i>love</i> <span class="orange">coffee</span>.
                   I'd marry it if it were a person.
@@ -53,7 +53,7 @@ import { SkillService } from '../services/skill.service';
               </ul>
             </div>
             <div class="col col-6">
-              <ul class="list-unstyled sub gray">
+              <ul class="list-unstyled gray padding-left">
                 <li class="mt-3"><span class="fa fa-cutlery orange"></span> The <span class="orange">kitchen</span> holds few
                   secrets for me.
                 </li>
@@ -89,14 +89,14 @@ import { SkillService } from '../services/skill.service';
           </p>
           <div class="row justify-content-start">
             <div *ngFor="let skill of feSkills" 
-                 class="col col-2 skill text-center">
+                 class="col col-lg-3 col-6 skill text-center">
               <img src="{{skill.logoUrl}}" />
               <span class="">{{skill.name}}</span>
             </div>
           </div>
           <div class="row justify-content-start mt-3">
             <div *ngFor="let skill of fefwSkills"
-                 class="col col-2 skill text-center">
+                 class="col col-lg-3 col-6 skill text-center">
               <img src="{{skill.logoUrl}}" />
               <span class="">{{skill.name}}</span>
             </div>
@@ -111,14 +111,14 @@ import { SkillService } from '../services/skill.service';
           </p>
           <div class="row justify-content-start">
             <div *ngFor="let skill of beSkills"
-                 class="col col-2 skill text-center">
+                 class="col col-lg-3 col-6 skill text-center">
               <img src="{{skill.logoUrl}}" />
               <span class="">{{skill.name}}</span>
             </div>
           </div>
           <div class="row justify-content-start mt-3">
             <div *ngFor="let skill of befwSkills"
-                 class="col col-2 skill text-center">
+                 class="col col-lg-3 col-6 skill text-center">
               <img src="{{skill.logoUrl}}" />
               <span class="">{{skill.name}}</span>
             </div>
@@ -131,7 +131,7 @@ import { SkillService } from '../services/skill.service';
           </p>
           <div class="row justify-content-start">
             <div *ngFor="let skill of dbSkills"
-                 class="col col-2 skill text-center">
+                 class="col col-lg-3 col-6 skill text-center">
               <img src="{{skill.logoUrl}}" />
               <span class="">{{skill.name}}</span>
             </div>
@@ -178,6 +178,13 @@ import { SkillService } from '../services/skill.service';
       float: right;
       margin: 10px;
     }
+    
+    .padding-left{
+      padding-left: 5px;
+    }
+    .padding-right{
+      padding-right: 5px;
+    }
 
     @media screen and (max-width: 300px){
       .main-title .jumbo span:last-child{
@@ -191,9 +198,18 @@ import { SkillService } from '../services/skill.service';
       }
     }
 
+    @media screen and (max-width: 500px){
+      .skill span{
+        font-size: 14px;
+      }
+    }
+
     @media screen and (min-width: 576px) and (max-width: 768px){
       .main-title .jumbo span:last-child{
         margin-left: -12px;
+      }
+      .skill span{
+        font-size: 14px;
       }
     }
   `

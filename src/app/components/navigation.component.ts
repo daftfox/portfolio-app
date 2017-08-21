@@ -106,7 +106,7 @@ export class NavigationComponent implements OnInit {
 
   getRoutes(config: Route[]) {
     for (let i = 0; i < config.length; i++) {
-      if (config[i].path) {
+      if (config[i].path && config[i].path !== '**') {
         this.routes.push(config[i]);
       }
     }
