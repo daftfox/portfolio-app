@@ -8,3 +8,10 @@
   overflow-y: scroll;
   pointer-events: all;
 }
+
+
+@media screen and (max-width: 576px){
+  .content-wrapper{
+    bottom: 18vh;
+  }
+}

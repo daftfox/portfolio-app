@@ -55,17 +55,23 @@ import 'rxjs/add/operator/mergeMap';
       margin: 10px 2px;
     }
     
-    /*@media screen and (max-width: 576px){
-      .menu-label{
-        font-size: 18px!important;
+    @media screen and (max-width: 320px){
+      .row div{
+        font-size: 20px!important;
       }
-    }*/
+    }
+    
+    @media screen and (max-width: 576px){
+      nav.container{
+        height: 18vh;
+      }
+    }
     `
   ],
   template:
     `<nav class="container">
       <hr class="orange" />
-      <div class="row justify-content-center no-gutters">
+      <div class="row justify-content-around no-gutters">
         <div *ngFor="let r of routes"
             [ngClass]="{'active': active}"
             routerLink="{{r.path}}"
@@ -86,13 +92,15 @@ import 'rxjs/add/operator/mergeMap';
           </a>
         </div>
       </div>
-    <div class="row justify-content-center no-gutters hidden-md-up">
+    <div class="row mt-3 justify-content-around no-gutters hidden-md-up">
       <div class="col col-4 center-text gray">
         <a target="_blank"
            class="social"
            href="https://www.linkedin.com/in/tim-claassens/">
           <span class="fa fa-linkedin"></span>
         </a>
+      </div>
+      <div class="col col-4 center-text gray">
         <a target="_blank"
            class="social"
            href="https://www.instagram.com/bakakitsune/">
