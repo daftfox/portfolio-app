@@ -73,7 +73,7 @@ import 'rxjs/add/operator/mergeMap';
             class="col col-4 gray center-text hover">
           {{r.path | capitalize}}
         </div>
-        <div class="col col-4 center-text gray">
+        <div class="col col-4 center-text gray hidden-md-down">
           <a target="_blank"
              class="social"
              href="https://www.linkedin.com/in/tim-claassens/">
@@ -86,7 +86,21 @@ import 'rxjs/add/operator/mergeMap';
           </a>
         </div>
       </div>
-    </nav>
+    <div class="row justify-content-center no-gutters hidden-md-up">
+      <div class="col col-4 center-text gray">
+        <a target="_blank"
+           class="social"
+           href="https://www.linkedin.com/in/tim-claassens/">
+          <span class="fa fa-linkedin"></span>
+        </a>
+        <a target="_blank"
+           class="social"
+           href="https://www.instagram.com/bakakitsune/">
+          <span class="fa fa-instagram"></span>
+        </a>
+      </div>
+    </div>
+  </nav>
   `
 })
 

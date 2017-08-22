@@ -216,3 +216,15 @@ hr.orange {
     font-size: 52px;
   }
 }
+
+@media screen and (max-width: 768px){
+  .hidden-md-down{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .hidden-md-up{
+    display: none;
+  }
+}

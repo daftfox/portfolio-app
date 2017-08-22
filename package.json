@@ -10,7 +10,8 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "build-prod": "./deployments/build_prod.sh",
-    "build-test": "./deployments/build_test.sh"
+    "build-test": "./deployments/build_test.sh",
+    "bundle-report": "webpack-bundle-analyzer dist/stats.json"
   },
   "private": true,
   "dependencies": {
