@@ -41,17 +41,17 @@
     ]
   },{
     "id": 3,
-    "name": "Damco",
-    "logoUrl": "./assets/img/logo-damco.png",
+    "name": "Aratus",
+    "logoUrl": "./assets/img/logo-aratus.png",
     "projects": [
       {
         "id": 4,
         "name": "Frida",
-        "description": "Damco was hit hard during the wave of Petya infections. After having lost their entire infrastructure and all data, we, a team of five random developers, scrambled together to realize a replacement warehouse management system within three days.\r\nFrida is written in PHP, assisted by Bootstrap with a MySQL database.",
+        "description": "An Aratus customer was hit hard during the wave of Petya infections. After having lost their entire infrastructure and all data, we, a team of five random developers, scrambled together to realize a replacement warehouse management system within three days.\r\nFrida is written in PHP, assisted by Bootstrap with a MySQL database.",
         "imageUrls": []
       }
     ],
-    "description": "Damco, a dutch logistics company with offices and warehouses around the world, requested a team of developers on extremely short notice. This team was to replace the warehouse management system of their warehouse in Göteborg, Sweden, within three days, from scratch.\r\nNeedless to say this was no small feat, however the job was completed satisfactory.",
+    "description": "An Aratus customer with offices and warehouses around the world, requested a team of developers on extremely short notice. This team was to replace the warehouse management system of their warehouse in Göteborg, Sweden, within three days, from scratch.\r\nNeedless to say this was no small feat, however the job was completed satisfactory.",
     "imageUrls": [
 
     ]
