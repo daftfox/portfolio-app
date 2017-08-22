@@ -30,6 +30,12 @@
         url('assets/fonts/junction/junction-regular.svg#webfont') format('svg');              /* Legacy iOS */
 }
 
+@-webkit-keyframes pulsate {
+  0% {opacity: 0.0;}
+  50% {opacity: 1.0;}
+  100% {opacity: 0.0;}
+}
+
 $orange:      #ffab40;
 $gray:        #bdbdbd;
 $anthracite:  #222222;
@@ -72,20 +78,41 @@ $anthracite:  #222222;
   background: transparent;
 }
 
+.loading-wrapper{
+  position: fixed;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1rem;
+  width: 50%;
+  margin: -0.5rem auto 0;
+
+  h3{
+    -webkit-animation: pulsate 3s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    opacity: 0.0
+  }
+
+  .bg-orange{
+    background-color: $orange!important;
+  }
+}
+
 /* You can add global styles to this file, and also import other style files */
 body, html{
   padding: 0;
   margin: 0;
   font-family: 'junction-regular', sans-serif;
   font-size: 18px;
+  height: 100vh;
+  background: $anthracite; /* Old browsers */
+  background: -moz-linear-gradient(top, $anthracite 0%, $anthracite 53%, #6C5136 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, $anthracite 0%, $anthracite 53%, #6C5136 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, $anthracite 0%, $anthracite 53%, #6C5136 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$anthracit', endColorstr='#6C5136',GradientType=0 ); /* IE6-9 */
 }
 
 #particles-js{
-  background: $anthracite; /* Old browsers */
-  background: -moz-linear-gradient(top, $anthracite 0%, $anthracite 53%, #6C5136 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, $anthracite 0%, $anthracite 53%, #6C5136 100% 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, $anthracite 0%, $anthracite 53%, #6C5136 100% 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$anthracit', endColorstr='#6C5136',GradientType=0 ); /* IE6-9 */
   position: fixed;
   top: 0;
   bottom: 0;
