@@ -20,8 +20,7 @@ import { SkillService } from '../services/skill.service';
             <img class="picture" src="../assets/img/timothy.jpg">
             Hi, I'm Timothy, a <years-since-date class="orange" [date]="dob"></years-since-date> old, Netherlands based professional
             nerd.
-            Currently employed by <span class="orange">Ordina</span> and working for 
-            <span class="orange">Rabobank</span> as <span class="orange">devops</span> on their mobile banking app.
+            Currently employed as Head of Semicolons by <span class="orange">The Weird Science</span> and working on several innovative projects.
           </p>
           <p class="sub gray">
             Tech-savvy since I was able to hold a screwdriver. Eager to <span class="orange">challenge</span> both 
