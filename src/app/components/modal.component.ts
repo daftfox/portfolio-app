@@ -65,6 +65,7 @@ export class ModalComponent {
   @Input() title: string;
   @Input() content: string;
   @Input() imageUrls: string[];
+  @Input() url: string;
   @Input() projects: Project[];
 
   constructor(public activeModal: NgbActiveModal) {}
