@@ -17,7 +17,7 @@ import { SkillService } from '../services/skill.service';
       <div class="row justify-content-center no-gutters">
         <div class="col-sm-8 no-gutters">
           <p class="sub gray">
-            <img class="picture" src="../assets/img/timothy.jpg">
+            <img class="picture" src="../assets/img/timothy-claassens-portrait.jpg">
             Hi, I'm Timothy, a <years-since-date class="orange" [date]="dob"></years-since-date> old, Netherlands based professional
             nerd.
             Currently employed as Head of Semicolons by <span class="orange">The Weird Science</span> and working on several innovative projects.
@@ -46,8 +46,8 @@ import { SkillService } from '../services/skill.service';
                   <span class="orange">traveling</span> if you feel like sitting down and listening for a couple of
                   hours.
                 </li>
-                <li class="mt-3"><span class="fa fa-paw orange"></span> I love our two senior <span class="orange">cats</span>
-                  , Lotje and Lucifer.
+                <li class="mt-3"><span class="fa fa-paw orange"></span> I love our senior <span class="orange">cat</span>
+                  , Lucifer.
                 </li>
               </ul>
             </div>
@@ -169,8 +169,8 @@ import { SkillService } from '../services/skill.service';
       filter: grayscale(0%);
     }
     .picture{
-      width: 35%;
-      border-radius: 50%;
+      width: 25%;
+      border-radius: 5px;
       float: right;
       margin: 10px;
     }
@@ -200,21 +200,19 @@ import { SkillService } from '../services/skill.service';
       }
       
       .picture{
-        width: 95%;
-        border-radius: 50%;
+        width: 50%;
         float: right;
         margin-left: 10px;
       }
     }
 
-    @media screen and (min-width: 500px) and (max-width: 576px){
+    @media screen and (max-width: 992px){
       .picture{
-        width: 60%;
-        border-radius: 50%;
+        width: 40%;
         float: right;
+        margin-left: 10px;
       }
     }
-    
 
     @media screen and (min-width: 576px) and (max-width: 768px){
       .main .jumbo span:last-child{

@@ -17,6 +17,7 @@ import {Project} from '../classes/project.class';
           <img class="logo mb-4 mt-4" src="{{logoUrl}}" />
         </div>
         <p class="description">{{content}}</p>
+        <p class="description" *ngIf="url">{{url}}</p>
         <div class="row justify-content-center">
           <div *ngFor="let imageUrl of imageUrls" class="col">
             <img src="{{imageUrl}}" />
@@ -24,9 +25,10 @@ import {Project} from '../classes/project.class';
         </div>
         <div class="row justify-content-start">
           <div *ngFor="let project of projects"
-               class="col project">
+               class="col col-6 project">
             <h3 class="orange">{{project.name}}</h3>
             <p class="description">{{project.description}}</p>
+            <a *ngIf="project.siteUrl" target="_blank" class="orange" href="{{project.siteUrl}}">{{project.siteUrl}}</a>
           </div>
         </div>
       </div>
@@ -49,7 +51,10 @@ import {Project} from '../classes/project.class';
     }
     .description{
       white-space: pre-wrap;
-      font-size: 16px;
+      font-size: 14px;
+    }
+    .project {
+      font-size: 14px;
     }
     `
   ]

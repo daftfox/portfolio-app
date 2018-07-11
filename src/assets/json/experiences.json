@@ -1,8 +1,37 @@
 [
   {
     "id": 1,
+    "name": "The Weird Science",
+    "logoUrl": "/assets/img/logo-tws.png",
+    "projects": [
+      {
+        "id": 1,
+        "name": "Oh my batteries",
+        "description": "Top secret. Shhssshhhhhhh...",
+        "imageUrls": [],
+        "siteUrl": null
+      },{
+        "id": 2,
+        "name": "SpaceX Monitor",
+        "description": "We believe Progressive Web Apps (PWA) are the future, Bill Gates and I. Thus I set out to play around with this hot, new web technology.\r\nThe SpaceX Monitor is the result of this session. A collaboration between yours truly and the SpaceX subreddit users, who happen to own and maintain an open API with all kinds of interesting stuff about SpaceX.",
+        "imageUrls": [],
+        "siteUrl": "https://spacex-monitor.timothy.fyi"
+      },{
+        "id": 3,
+        "name": "I love hue 2",
+        "description": "\"Build a game\" they said. \"It will be fun\" they said. Well, here it is.\r\nBefore I was accepted in the ranks of weird scientists, I was tasked with building a realtime multiplayer game using web technologies.\r\nWithin a week.\r\n\r\nThe final result and my ticket into this awesome company can be seen using the link below.\r\n\r\nThis project is still under construction so come back once every while for an update.",
+        "imageUrls": [],
+        "siteUrl": "https://i-love-hue-2.timothy.fyi/"
+      }
+    ],
+    "description": "At The Weird Science we welcome all kinds of nerds. As long as you're good.\r\nThe mix of consultancy, entrepeneurism, R&D and freedom to pursue personal interests make this a challenging job.\r\n\r\n\"If you're not a genius, get out.\" - Irina S.\r\n\"You should do everything, always, all the time. Anything less then everything is for the weak.\" - Olivier H.",
+    "imageUrls": [
+
+    ]
+  },{
+    "id": 1,
     "name": "Ordina",
-    "logoUrl": "./assets/img/logo-ordina.png",
+    "logoUrl": "/assets/img/logo-ordina.png",
     "projects": [
       {
         "id": 1,
@@ -18,14 +47,14 @@
         "siteUrl": "http://www.codeandcomedy.nl"
       }
     ],
-    "description": "Ordina has been a real game-changer for me. \r\nSince starting here, I have been able to work on several highly interesting jobs that would otherwise never have crossed my path.\r\nThe free courses also offer plenty to ponder on.",
+    "description": "Ordina has been a real game-changer for me. \r\nSince starting here, I have been able to work on several highly interesting jobs that would otherwise never have crossed my path.",
     "imageUrls": [
 
     ]
   },{
     "id": 2,
     "name": "Rabobank",
-    "logoUrl": "./assets/img/logo-rabobank.png",
+    "logoUrl": "/assets/img/logo-rabobank.png",
     "projects": [
       {
         "id": 3,
@@ -42,7 +71,7 @@
   },{
     "id": 3,
     "name": "Aratus",
-    "logoUrl": "./assets/img/logo-aratus.png",
+    "logoUrl": "/assets/img/logo-aratus.png",
     "projects": [
       {
         "id": 4,
@@ -58,7 +87,7 @@
   },{
     "id": 4,
     "name": "Travel Light",
-    "logoUrl": "./assets/img/logo-travel-light.png",
+    "logoUrl": "/assets/img/logo-travel-light.png",
     "projects": [
       {
         "id": 5,
@@ -75,7 +104,7 @@
   },{
     "id": 5,
     "name": "Triple",
-    "logoUrl": "./assets/img/logo-triple.png",
+    "logoUrl": "/assets/img/logo-triple.png",
     "projects": [
       {
         "id": 6,
@@ -110,7 +139,7 @@
   },{
     "id": 6,
     "name": "Adésys",
-    "logoUrl": "./assets/img/logo-adesys.png",
+    "logoUrl": "/assets/img/logo-adesys.png",
     "projects": [
       {
         "id": 10,
@@ -127,7 +156,7 @@
   },{
     "id": 7,
     "name": "OIS",
-    "logoUrl": "./assets/img/logo-ois.png",
+    "logoUrl": "/assets/img/logo-ois.png",
     "projects": [
       {
         "id": 11,

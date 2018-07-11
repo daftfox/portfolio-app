@@ -22,6 +22,7 @@ import {ExperienceService} from '../services/experience.service';
 
     .employer img{
       max-width: 100%;
+      max-height: 100px;
       vertical-align: middle;
     }
 
