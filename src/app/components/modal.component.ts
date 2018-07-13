@@ -5,7 +5,7 @@ import {Project} from '../classes/project.class';
 @Component({
   selector: 'modal',
   template: `
-    <div>
+    <div class="p-3">
       <div class="modal-header">
         <h4 class="modal-title">{{title}}</h4>
         <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
@@ -17,10 +17,10 @@ import {Project} from '../classes/project.class';
           <img class="logo mb-4 mt-4" src="{{logoUrl}}" />
         </div>
         <p class="description">{{content}}</p>
-        <p class="description" *ngIf="url">{{url}}</p>
+        <a [href]="url" *ngIf="url" target="_blank">{{url}}</a>
         <div class="row justify-content-center">
-          <div *ngFor="let imageUrl of imageUrls" class="col">
-            <img src="{{imageUrl}}" />
+          <div *ngFor="let imageUrl of imageUrls" class="col-6 py-3">
+            <img class="img-fluid" [src]="imageUrl" />
           </div>
         </div>
         <div class="row justify-content-start">
@@ -52,6 +52,7 @@ import {Project} from '../classes/project.class';
     .description{
       white-space: pre-wrap;
       font-size: 14px;
+      text-align: justify;
     }
     .project {
       font-size: 14px;

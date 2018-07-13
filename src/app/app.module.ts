@@ -12,10 +12,13 @@ import { ExperienceComponent } from './components/experience.component';
 import { ContactComponent } from 'app/components/contact.component';
 import { NavigationComponent } from './components/navigation.component';
 import { ModalComponent } from './components/modal.component';
+import {DemoComponent} from "./components/demo.component";
+
 
 // services
 import { ExperienceService } from './services/experience.service';
 import { SkillService } from './services/skill.service';
+import { DemoService } from './services/demo.service';
 
 // pipes
 import { CapitalizePipe } from './pipes/capitalize.pipe';
@@ -32,6 +35,10 @@ const appRoutes: Routes = [
   {
     path: 'experience',
     component: ExperienceComponent
+  },
+  {
+    path: 'demos',
+    component: DemoComponent
   },
   /*{
     path: 'contact',
@@ -59,7 +66,8 @@ const appRoutes: Routes = [
     NavigationComponent,
     YearsSinceDateComponent,
     ModalComponent,
-    CapitalizePipe
+    CapitalizePipe,
+    DemoComponent
   ],
   imports: [
     BrowserModule,
@@ -77,7 +85,8 @@ const appRoutes: Routes = [
   ],
   providers: [
     ExperienceService,
-    SkillService
+    SkillService,
+    DemoService
   ],
   bootstrap: [AppComponent],
   exports: [

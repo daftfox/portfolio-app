@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "I Love hue 2",
+    "logoUrl": "/assets/img/logo-i-love-hue-2.png",
+    "description": "When I applied for the position of 'Head of Semicolons' I was first tasked with building a realtime, multiplayer game using web-technologies and do it within a week.\r\nTo be honest, this intimidated me at first. I was used to building software on a very meticulous basis, since I worked at the bank, so naturally, this process takes longer than when you're working on a prototype.\r\nNevertheless, I quickly got inspired by one of my favorite mobile games; I love hue.\r\nIt's a little game which revolves around fixing gradients that cut into tiles and then scrambled, accompanied by a soothing atmosphere and a good soundtrack. I chose to use JavaScript as my stack, since this is my specialty, and decided on Angular for the frontend and a simple Express backend. The 'realtime' part of this project was filled in by using Websockets for communicating player moves along clients and server. So basically 'my' game is a reverse engineered version of this game, compatible with every device that has a JavaScript compatible browser.\r\n\r\nThis project taught me a lot about myself and what I like about programming and creating, both professionally as well as for fun.\r\n\r\nThis project is still being maintained.",
+    "imageUrls": [
+      "/assets/img/poster.png",
+      "/assets/img/sketch_start-screen.png",
+      "/assets/img/sketch_multiplayer.png",
+      "/assets/img/sketch_multiplayer-win.png"
+    ],
+    "url": "https://i-love-hue-2.timothy.fyi"
+  }, {
+    "id": 2,
+    "name": "SpaceX Monitor",
+    "logoUrl": "/assets/img/logo-spacex-monitor.png",
+    "description": "Long story short: I wanted to fool around with PWA's (Progressive Web Apps) and needed a project. This became the SpaceX Monitor; a simple but rather sleek interface, heavily inspired by the SpaceX website itself, that provides an intuitive way of viewing all sorts of information about SpaceX. Be it launches or rocket-components, you can read all about it on the SpaceX Monitor.",
+    "imageUrls": [
+      "/assets/img/spacex-screenshot-1.png",
+      "/assets/img/spacex-screenshot-2.png",
+      "/assets/img/spacex-screenshot-3.png"
+    ],
+    "url": "https://spacex-monitor.timothy.fyi"
+  }
+]

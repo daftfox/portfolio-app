@@ -20,7 +20,9 @@
         "id": 3,
         "name": "I love hue 2",
         "description": "\"Build a game\" they said. \"It will be fun\" they said. Well, here it is.\r\nBefore I was accepted in the ranks of weird scientists, I was tasked with building a realtime multiplayer game using web technologies.\r\nWithin a week.\r\n\r\nThe final result and my ticket into this awesome company can be seen using the link below.\r\n\r\nThis project is still under construction so come back once every while for an update.",
-        "imageUrls": [],
+        "imageUrls": [
+
+        ],
         "siteUrl": "https://i-love-hue-2.timothy.fyi/"
       }
     ],
@@ -77,7 +79,8 @@
         "id": 4,
         "name": "Frida",
         "description": "An Aratus customer was hit hard during the wave of Petya infections. After having lost their entire infrastructure and all data, we, a team of five random developers, scrambled together to realize a replacement warehouse management system within three days.\r\nFrida is written in PHP, assisted by Bootstrap with a MySQL database.",
-        "imageUrls": []
+        "imageUrls": [],
+        "siteUrl": "https://www.zdnet.com/article/petya-ransomware-cyber-attack-costs-could-hit-300m-for-shipping-giant-maersk/"
       }
     ],
     "description": "An Aratus customer with offices and warehouses around the world, requested a team of developers on extremely short notice. This team was to replace the warehouse management system of their warehouse in Göteborg, Sweden, within three days, from scratch.\r\nNeedless to say this was no small feat, however the job was completed satisfactory.",
@@ -111,7 +114,7 @@
         "name": "Achmea Even Tanken",
         "description": "This was my first (and so far last) iOS application. Achmea wanted to lower the number of customers who ended up filling their vehicle with the wrong type of fuel. The app featured a rolodex interface for users to select the type of fuel for their vehicle after which it's name was translated to its official name(s) in more than ten languages.",
         "imageUrls": [],
-        "siteUrl": null
+        "siteUrl": "https://itunes.apple.com/nl/app/even-tanken/id658347458?mt=8"
       },{
         "id": 7,
         "name": "Snipp-IT",
@@ -146,7 +149,7 @@
         "name": "Livind",
         "description": "Livind was a set of healthcare domotica connected to a webservice. This allows users to monitor the loved ones who need that extra support through an anonymous stream of data.\r\nThe service was comprised of an AngularJS front-end and NodeJS/Express back-end. I did not have a single role in this project, but mostly worked on front-end stories. However the experience gained with Express convinced me to start building my own APIs.",
         "imageUrls": [],
-        "siteUrl": "http://www.livind.nl"
+        "siteUrl": "https://www.livind.nl"
       }
     ],
     "description": "My time at Adésys was when I first came into contact with modern javascript frameworks. Here I worked together with specialists from very different disciplines as well as becoming more proficient with microelectronics since Adésys produces and designs its own hardware.",

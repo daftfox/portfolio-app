@@ -17,10 +17,11 @@ import { SkillService } from '../services/skill.service';
       <div class="row justify-content-center no-gutters">
         <div class="col-sm-8 no-gutters">
           <p class="sub gray">
-            <img class="picture" src="../assets/img/timothy-claassens-portrait.jpg">
+            <img class="picture" alt="Timothy Claassens" title="Timothy Claassens" src="../assets/img/timothy-claassens-portrait.jpg">
             Hi, I'm Timothy, a <years-since-date class="orange" [date]="dob"></years-since-date> old, Netherlands based professional
             nerd.
-            Currently employed as Head of Semicolons by <span class="orange">The Weird Science</span> and working on several innovative projects.
+            Currently employed as Head of Semicolons by <span class="orange">The Weird Science</span> and working on 
+            several innovative projects as well as doing <span class="orange">consultancy</span> work for clients.
           </p>
           <p class="sub gray">
             Tech-savvy since I was able to hold a screwdriver. Eager to <span class="orange">challenge</span> both 
@@ -44,20 +45,23 @@ import { SkillService } from '../services/skill.service';
                 </li>
                 <li class="mt-3"><span class="fa fa-globe orange"></span> Ask me about my love for
                   <span class="orange">traveling</span> if you feel like sitting down and listening for a couple of
-                  hours.
+                  hours.<br>(Or have a look at my <a class="orange" target="_blank" href="https://www.polarsteps.com/TimothyClaassens"><u>Polarsteps</u></a> page)
                 </li>
                 <li class="mt-3"><span class="fa fa-paw orange"></span> I love our senior <span class="orange">cat</span>
-                  , Lucifer.
+                  , Lucifer. And all other cats for that matter. In fact, I love <span class="orange"><i>all</i> animals</span>.
                 </li>
               </ul>
             </div>
             <div class="col col-6">
               <ul class="list-unstyled gray padding-left">
                 <li class="mt-3"><span class="fa fa-cutlery orange"></span> The <span class="orange">kitchen</span> holds few
-                  secrets for me.
+                  secrets for me. I love asian cuisine and you can always wake me up in the middle of the night for a proper bowl of <span class="orange">ramen</span>.
                 </li>
-                <li class="mt-3"><span class="fa fa-hand-spock-o orange"></span> I'm a total <span class="orange">nerd</span>
-                  and <span class="orange">sci-fi</span> fan.
+                <li class="mt-3"><span class="fa fa-hand-spock-o orange"></span> I'm a <span class="orange">nerd</span>
+                  and total <span class="orange">sci-fi</span> fan.<br>Who would have guessed?
+                </li>
+                <li class="mt-3"><span class="fa fa-leaf orange"></span> I'm an <span class="orange">environmentalist</span> and always strive to improve the connection between humans
+                  and nature. I kinda like it here on this small <span class="orange">planet</span> and I would like to keep liking it in the future.
                 </li>
               </ul>
             </div>
@@ -149,10 +153,10 @@ import { SkillService } from '../services/skill.service';
     .skill{
       transition-duration: 0.5s;
       /* Firefox 10+, Firefox on Android */
-      filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+      //filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
 
       /* IE 6-9 */
-      filter: gray;
+      //filter: gray;
 
       /*
       Chrome 19+,
@@ -160,8 +164,12 @@ import { SkillService } from '../services/skill.service';
       Safari 6+ iOS,
       Opera 15+
       */
-      -webkit-filter: grayscale(100%);
+      //-webkit-filter: grayscale(100%);
       color: #bdbdbd;
+    }
+    
+    .list-unstyled li {
+      text-align: justify;
     }
     
     .skill:hover{

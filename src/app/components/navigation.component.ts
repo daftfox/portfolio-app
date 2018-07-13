@@ -76,10 +76,10 @@ import 'rxjs/add/operator/mergeMap';
             [ngClass]="{'active': active}"
             routerLink="{{r.path}}"
             routerLinkActive="active"
-            class="col col-4 gray center-text hover">
+            class="col-auto gray center-text hover">
           {{r.path | capitalize}}
         </div>
-        <div class="col col-4 center-text gray hidden-md-down">
+        <div class="col-12 col-md-auto center-text gray">
           <a target="_blank"
              class="social"
              href="https://www.linkedin.com/in/tim-claassens/">
@@ -87,27 +87,27 @@ import 'rxjs/add/operator/mergeMap';
           </a>
           <a target="_blank"
              class="social"
-             href="https://www.linkedin.com/in/tim-claassens/">
-            <span class="fa fa-instagram"></span>
+             href="https://github.com/daftfox/">
+            <span class="fa fa-github"></span>
           </a>
         </div>
       </div>
-    <div class="row mt-3 justify-content-around no-gutters hidden-md-up">
-      <div class="col col-4 center-text gray">
-        <a target="_blank"
-           class="social"
-           href="https://www.linkedin.com/in/tim-claassens/">
-          <span class="fa fa-linkedin"></span>
-        </a>
-      </div>
-      <div class="col col-4 center-text gray">
-        <a target="_blank"
-           class="social"
-           href="https://www.instagram.com/bakakitsune/">
-          <span class="fa fa-instagram"></span>
-        </a>
-      </div>
-    </div>
+    <!--<div class="row mt-3 justify-content-around no-gutters hidden-md-up">-->
+      <!--<div class="col-auto center-text gray">-->
+        <!--<a target="_blank"-->
+           <!--class="social"-->
+           <!--href="https://www.linkedin.com/in/tim-claassens/">-->
+          <!--<span class="fa fa-linkedin"></span>-->
+        <!--</a>-->
+      <!--</div>-->
+      <!--<div class="col col-4 center-text gray">-->
+        <!--<a target="_blank"-->
+           <!--class="social"-->
+           <!--href="https://www.instagram.com/bakakitsune/">-->
+          <!--<span class="fa fa-instagram"></span>-->
+        <!--</a>-->
+      <!--</div>-->
+    <!--</div>-->
   </nav>
   `
 })

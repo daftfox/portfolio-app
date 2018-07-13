@@ -170,7 +170,7 @@ a{
 }
 
 .orange{
-  color: $orange;
+  color: $orange!important;
 }
 
 .gray{
@@ -183,6 +183,10 @@ hr.orange {
 
 .jumbo{
   font-size: 72px;
+}
+
+.sub {
+  text-align: justify;
 }
 
 .bold{

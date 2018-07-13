@@ -7,12 +7,16 @@ import {ExperienceService} from '../services/experience.service';
 @Component({
   selector: 'experience-component',
   styles: [
-    `.employer{
+    `
+    .container {
+      margin-top: 8vh;
+    }
+    .employer{
       margin-top: 35px;
       height: 250px;
       padding: 10px;
       transition-duration: 0.5s;
-      filter: grayscale(100%);
+      //filter: grayscale(100%);
       cursor: pointer;
     }
 
@@ -50,7 +54,7 @@ import {ExperienceService} from '../services/experience.service';
     `
   ],
   template:
-    `<div class="container main">
+    `<div class="container">
       <div class="row justify-content-start">
         <div  *ngFor="let experience of experiences"
               class="col col-6 col-lg-3">
@@ -92,5 +96,6 @@ export class ExperienceComponent {
     modalRef.content = experience.description;
     modalRef.logoUrl = experience.logoUrl;
     modalRef.projects = experience.projects;
+    //modalRef.imageUrls = experience.imageUrls;
   }
 }
